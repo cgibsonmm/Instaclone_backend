@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+@post = ImagePost.find(1)
+puts Dir.pwd
+@post.image.attach(io: File.open('./public/photos/dock.jpg'),filename: 'dockimage')
