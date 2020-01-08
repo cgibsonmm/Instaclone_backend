@@ -4,7 +4,7 @@ class ImagePostController < ApplicationController
     render json: @posts
   end
 
-  def new
+  def create
     puts params
     # @image_post = ImagePost.new()
   end
