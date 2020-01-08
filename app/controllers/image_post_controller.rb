@@ -5,8 +5,8 @@ class ImagePostController < ApplicationController
   end
 
   def create
+    puts "---------------"
     puts params
     # @image_post = ImagePost.new()
   end
-  
 end

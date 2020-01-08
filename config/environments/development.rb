@@ -9,7 +9,7 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
-  # config.force_ssl = true
+  config.force_ssl = true
 
   # Show full error reports.
   config.consider_all_requests_local = true
