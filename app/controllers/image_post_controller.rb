@@ -7,6 +7,13 @@ class ImagePostController < ApplicationController
   def create
     puts "---------------"
     puts params
-    # @image_post = ImagePost.new()
+    @image_post = ImagePost.new(post_params)
   end
+
+  private
+
+  params.require(:image_post).permit(:image, :username)
+
+
+
 end
